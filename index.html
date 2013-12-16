@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final</title>
+</head>
+<body>
+    <script>
+        // Wrapper
+        document.body.style.margin = '0 auto';
+        document.body.style.clear = 'both';
+        document.body.style.width = '800px';
+
+        // Creating Variables
+        var b = document.body,
+            header = document.createElement('header'),
+            left = document.createElement('left'),
+            right = document.createElement('right'),
+            footer = document.createElement('footer');
+
+        // Appending Child
+        b.appendChild(header).appendChild(document.createTextNode('Header'));
+        b.appendChild(left).appendChild(document.createTextNode('Left'));
+        b.appendChild(right).appendChild(document.createTextNode('Right'));
+        b.appendChild(footer).appendChild(document.createTextNode('Footer'));
+
+        // header.style.backgroundColor = 'red';
+        header.style.textAlign = 'center';
+        header.style.height = '100px';
+        header.style.paddingTop = '70px';
+
+        // left.style.backgroundColor = 'green';
+        left.style.width = '400px';
+        left.style.height = '250px';
+        left.style.cssFloat = 'left';
+        left.style.textAlign = 'center';
+        left.style.paddingTop = '200px';
+
+        // right.style.backgroundColor = 'yellow';
+        right.style.width = '400px';
+        right.style.height = '250px';
+        right.style.textAlign = 'center';
+        right.style.cssFloat = 'left';
+        right.style.paddingTop = '200px';
+
+        footer.style.backgroundColor = 'blue';
+        footer.style.clear = 'both';
+        footer.style.width = '800px';
+        footer.style.height = '50px';
+        footer.style.textAlign = 'center';
+        footer.style.paddingTop = '30px';
+
+        // header.addEventListener('click', function(change) {
+        //     if ( change = change.target ) {
+        //         backgroundColor = 'red' ? 'blue' ? 'green' : 'red';
+        //     }
+        // }, false)
+    </script>
+</body>
+</html>
